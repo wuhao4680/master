@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-itunes-app" content="app-id=427555239"/>
+    <title>轮播图</title>
+    <!--viewport并非Safari的私有属性，width用于指定宽度，initial-scale指定初始化的缩略比例，minimum-scale指定缩小的比例，而maximum-scale则是放大的比例，当然这些缩放都取决于user-scalable——决定用户是否能缩放页面-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--全屏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--改变状态栏-->
+    <meta name="format-detection" content="telephone=no">
+    <link href="pub/css/common.css" type="text/css" rel="stylesheet"/>
+    <link href="pub/css/index.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div id="box">
+    <ul>
+        <li><a href="#self"><img
+                src="pub/images/1.jpg"></a></li>
+        <li><a href="#self"><img
+                src="pub/images/2.jpg"></a></li>
+        <li><a href="#self"><img
+                src="pub/images/3.jpg"></a></li>
+    </ul>
+
+</div>
+
+
+
+
+<script src="pub/js/index.js"></script>
+<SCRIPT TYPE="text/javascript">
+    var oBox = document.getElementById('box');
+    var banner_cycle = new cycle_slide({container: oBox, direct: 'horizontal', timer: 5000});
+</SCRIPT>
+
+
+</body>
+</html>
